@@ -1,10 +1,12 @@
 import React from 'react'
 
-const Greet = () => {
+const Greet = (props) => {
     return (
         <div>
-            <h1>Hello there, this is the new react series</h1>
+            <h1>Hello, {props.name}</h1>
+            <h3>This is the new react series</h3>
             <p>Latest updates makes the stateless functional components to stateful functional components and functional components supports all type of the hooks.</p>
+            {props.children}
         </div>
     )
 }

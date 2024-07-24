@@ -1,0 +1,3 @@
+Know everything about the React
+
+1) Props are immutable
