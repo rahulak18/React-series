@@ -1,3 +1,14 @@
+
+<!-- Useful information to get start with the React series -->
+
+* React is a declarative not a imperative approach
+* React is a library not a framework, component based library, single page application
+* React is a stateful class component
+* React is a stateless function component
+* React is a one way data binding, (unidirectional data flow)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
