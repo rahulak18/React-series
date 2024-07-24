@@ -1,15 +1,33 @@
 import React, { Component } from 'react'
 
 export default class Welcome extends Component {
+
+    // rconst is the shortcut to create the constructor inside the react class component
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            message: 'Welcome user'
+        }
+    }
+
+
+
+    handleOnClick = () => {
+        this.setState({
+            message: 'Thank you for subscribing'
+        })
+    }
+
     render() {
         return (
             <div>
-                <h1>Hi {this.props.name},this is the stateful class component in the React.</h1>
-                <br />
-                <p>Main advantage of stateful class components over the stateless functional component are, class components provides the life cycle hooks where the functional components doesn't.
-                </p>
-                {this.props.children}
+                <h1>{this.state.message}</h1>
+                <button onClick={() => { this.handleOnClick() }}>Subscribe</button>
             </div>
         )
     }
 }
+
+
+
