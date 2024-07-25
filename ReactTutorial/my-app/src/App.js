@@ -1,11 +1,12 @@
 import './App.css';
-import ParentComponent from './Methods-as-props/ParentComponent';
+import WelcomeUser from './Conditional-rendering/WelcomeUser';
+
 
 
 function App() {
   return (
     <div className="App">
-      <ParentComponent />
+      <WelcomeUser />
     </div>
   );
 }
