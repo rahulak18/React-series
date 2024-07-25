@@ -1,11 +1,10 @@
 import './App.css';
-import Counter from './Counter';
+import MessageDisplay from './MessageDisplay';
 
 function App() {
   return (
     <div className="App">
-
-      <Counter />
+      <MessageDisplay />
     </div>
   );
 }
