@@ -1,14 +1,27 @@
 Know everything about the React
 
 1) Props are immutable
+------------------------------------------------------------------------------------------------------
 
 2) Functional component - useState Hook
     Class component - this.state
+
+------------------------------------------------------------------------------------------------------
 
 3) <> </> - Fragments (note: can't use key attribute )
     or  
     <React.Fragments> </React.Fragments>
 
+------------------------------------------------------------------------------------------------------
+
 4) Pure Components - Checks (Shallow comparison) the prev props and prev state, if there is no difference in the previous and current props/state then the pure components will not get re-render (whereas the normal/regular component will get re-renders all the time even though the previous value and current are same), if there is a difference then pure component will get re-renders. 
 
 Reason for not re-rendering in pure components: Pure components implements shouldComponentUpdate() lifecycle method by performing a shallow comparison on the props & state.
+
+------------------------------------------------------------------------------------------------------
+
+5) The React.memo function is a higher-order component (HOC) in React that is used to optimize the performance of functional components by preventing unnecessary re-renders. It does this by performing a shallow comparison of the component's props. If the props haven't changed, React skips rendering the component and returns the memoized result.
+
+React.memo only prevents re-renders due to prop changes. It does not prevent re-renders caused by state changes within the component.
+
+------------------------------------------------------------------------------------------------------

@@ -1,10 +1,10 @@
 import './App.css';
-import LifeCycleA from './LifeCycle-methods/LifeCycleA';
+import MemoComp from './Memo-component/MemoComp';
 
 function App() {
   return (
     <div className="App">
-      <LifeCycleA />
+      <MemoComp />
     </div>
   );
 }
