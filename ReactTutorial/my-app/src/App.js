@@ -1,10 +1,11 @@
 import './App.css';
-import MessageDisplay from './MessageDisplay';
+import ParentComponent from './Methods-as-props/ParentComponent';
+
 
 function App() {
   return (
     <div className="App">
-      <MessageDisplay />
+      <ParentComponent />
     </div>
   );
 }
