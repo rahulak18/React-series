@@ -1,12 +1,10 @@
 import './App.css';
-import WelcomeUser from './Conditional-rendering/WelcomeUser';
-
-
+import PersonInfo from './Rendering-lists/PersonInfo';
 
 function App() {
   return (
     <div className="App">
-      <WelcomeUser />
+      <PersonInfo />
     </div>
   );
 }
