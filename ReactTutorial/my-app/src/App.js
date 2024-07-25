@@ -1,10 +1,10 @@
 import './App.css';
-import FormHandling from './Form-handling/FormHandling';
+import LifeCycleA from './LifeCycle-methods/LifeCycleA';
 
 function App() {
   return (
     <div className="App">
-      <FormHandling />
+      <LifeCycleA />
     </div>
   );
 }
