@@ -1,10 +1,10 @@
 import './App.css';
-import PersonInfo from './Rendering-lists/PersonInfo';
+import FormHandling from './Form-handling/FormHandling';
 
 function App() {
   return (
     <div className="App">
-      <PersonInfo />
+      <FormHandling />
     </div>
   );
 }
