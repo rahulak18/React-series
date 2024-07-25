@@ -4,3 +4,7 @@ Know everything about the React
 
 2) Functional component - useState Hook
     Class component - this.state
+
+3) <> </> - Fragments (note: can't use key attribute )
+    or  
+    <React.Fragments> </React.Fragments>
