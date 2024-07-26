@@ -1,14 +1,10 @@
 import './App.css';
-import ComponentA from './Context/ComponentA';
-import { UserProvider } from './Context/UserContext';
+import HttpPost from './Http-requests/HttpPost';
 
 function App() {
   return (
     <div className="App">
-      <UserProvider value={'Devilliers'}>
-        <ComponentA />
-      </UserProvider>
-
+      <HttpPost />
     </div>
   );
 }
