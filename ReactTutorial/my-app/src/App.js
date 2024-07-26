@@ -1,19 +1,13 @@
 import './App.css';
-import ClickCounter2 from './Render-Props/ClickCounter2';
-import Counter from './Render-Props/Counter';
-import HoverCounter2 from './Render-Props/HoverCounter2';
+import ComponentA from './Context/ComponentA';
+import { UserProvider } from './Context/UserContext';
 
 function App() {
   return (
     <div className="App">
-
-      <Counter
-        render={(count, incrementCount) => <ClickCounter2 count={count} incrementCount={incrementCount} />}
-      />
-
-      <Counter
-        render={(count, incrementCount) => <HoverCounter2 count={count} incrementCount={incrementCount} />}
-      />
+      <UserProvider value={'Devilliers'}>
+        <ComponentA />
+      </UserProvider>
 
     </div>
   );
