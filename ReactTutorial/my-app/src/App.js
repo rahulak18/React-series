@@ -1,10 +1,10 @@
 import './App.css';
-import MemoComp from './Memo-component/MemoComp';
+import RefsDemo from './React-Refs/RefsDemo';
 
 function App() {
   return (
     <div className="App">
-      <MemoComp />
+      <RefsDemo />
     </div>
   );
 }
