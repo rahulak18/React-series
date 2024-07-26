@@ -1,10 +1,10 @@
 import './App.css';
-import FocusInput from './React-Refs/FocusInput';
+import FRParentInput from './React-Refs/Forward-Refs/FRParentInput';
 
 function App() {
   return (
     <div className="App">
-      <FocusInput />
+      <FRParentInput />
     </div>
   );
 }
