@@ -1,10 +1,10 @@
 import './App.css';
-import RefsDemo from './React-Refs/RefsDemo';
+import FocusInput from './React-Refs/FocusInput';
 
 function App() {
   return (
     <div className="App">
-      <RefsDemo />
+      <FocusInput />
     </div>
   );
 }

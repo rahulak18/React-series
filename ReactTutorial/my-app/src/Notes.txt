@@ -25,3 +25,7 @@ Reason for not re-rendering in pure components: Pure components implements shoul
 React.memo only prevents re-renders due to prop changes. It does not prevent re-renders caused by state changes within the component.
 
 ------------------------------------------------------------------------------------------------------
+
+6) Refs works only on the class components not for the functional components
+
+------------------------------------------------------------------------------------------------------
