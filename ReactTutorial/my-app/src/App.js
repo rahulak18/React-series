@@ -1,10 +1,10 @@
 import './App.css';
-import FRParentInput from './React-Refs/Forward-Refs/FRParentInput';
+import PortalDemo from './Portals/PortalDemo';
 
 function App() {
   return (
     <div className="App">
-      <FRParentInput />
+      <PortalDemo />
     </div>
   );
 }
