@@ -1,22 +1,12 @@
 import './App.css';
-import ErrorBoundary from './Error-boundary/ErrorBoundary';
-import Hero from './Error-boundary/Hero';
-import PortalDemo from './Portals/PortalDemo';
+import ClickCounter from './Higher-order-components/ClickCounter';
+import HoverCounter from './Higher-order-components/HoverCounter';
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
-        <Hero name={'Batman'} />
-      </ErrorBoundary>
-
-      <ErrorBoundary>
-        <Hero name={'Superman'} />
-      </ErrorBoundary>
-
-      <ErrorBoundary>
-        <Hero name={'Joker'} />
-      </ErrorBoundary>
+      <ClickCounter name={'dummy1'} />
+      <HoverCounter name={'dummy2'} />
     </div>
   );
 }
