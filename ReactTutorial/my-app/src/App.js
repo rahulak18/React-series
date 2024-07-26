@@ -1,12 +1,20 @@
 import './App.css';
-import ClickCounter from './Higher-order-components/ClickCounter';
-import HoverCounter from './Higher-order-components/HoverCounter';
+import ClickCounter2 from './Render-Props/ClickCounter2';
+import Counter from './Render-Props/Counter';
+import HoverCounter2 from './Render-Props/HoverCounter2';
 
 function App() {
   return (
     <div className="App">
-      <ClickCounter name={'dummy1'} />
-      <HoverCounter name={'dummy2'} />
+
+      <Counter
+        render={(count, incrementCount) => <ClickCounter2 count={count} incrementCount={incrementCount} />}
+      />
+
+      <Counter
+        render={(count, incrementCount) => <HoverCounter2 count={count} incrementCount={incrementCount} />}
+      />
+
     </div>
   );
 }
