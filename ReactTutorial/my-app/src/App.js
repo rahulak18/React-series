@@ -1,12 +1,11 @@
 import './App.css';
-import HookCounter from './Use-state-hook/HookCounter';
-import HookWithArray from './Use-state-hook/HookWithArray';
-import HookWithObject from './Use-state-hook/HookWithObject';
+import HookWithCounter from './Use-Effect-Hook/HookWithCounter';
+import HookWithDependencies from './Use-Effect-Hook/HookWithDependencies';
 
 function App() {
   return (
     <div className="App">
-      <HookWithArray />
+      <HookWithDependencies />
     </div>
   );
 }
