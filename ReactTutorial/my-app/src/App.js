@@ -1,10 +1,12 @@
 import './App.css';
-import HttpPost from './Http-requests/HttpPost';
+import HookCounter from './Use-state-hook/HookCounter';
+import HookWithArray from './Use-state-hook/HookWithArray';
+import HookWithObject from './Use-state-hook/HookWithObject';
 
 function App() {
   return (
     <div className="App">
-      <HttpPost />
+      <HookWithArray />
     </div>
   );
 }
