@@ -32,3 +32,12 @@ React.memo only prevents re-renders due to prop changes. It does not prevent re-
 7) If we dont use UseCallback() hook then the components which doesn't got updated or any props/states doesn't changes they also get re-rendered so to avoid this we need to use callback() hook. (Although use it only when it necessary to optimize performance)
 
 Syntax: useCallback( ()=>{} , ['dependencies])
+
+use when you want to cache the function
+
+------------------------------------------------------------------------------------------------------
+8) If we dont use useMemo() hook then the components which doesn't got updated or any props/states doesn't changes they also get re-rendered so to avoid this we need to use useMemo() hook. (Although use it only when it necessary to optimize performance)
+
+Syntax: useMemo( ()=>{} , ['dependencies])
+
+use when you want to cache the result
