@@ -1,11 +1,10 @@
 import './App.css';
-import HookWithCounter from './Use-Effect-Hook/HookWithCounter';
-import HookWithDependencies from './Use-Effect-Hook/HookWithDependencies';
+import HookCounter2 from './Use-Redux-Hook/HookCounter2';
 
 function App() {
   return (
     <div className="App">
-      <HookWithDependencies />
+      <HookCounter2 />
     </div>
   );
 }
