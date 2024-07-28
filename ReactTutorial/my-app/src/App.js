@@ -1,10 +1,10 @@
 import './App.css';
-import CounterWithTwoHooks from './UseContext-with-UseReducer/CounterWithTwoHooks';
+import HookwithCallBack from './UseCallback-Hook/HookwithCallBack';
 
 function App() {
   return (
     <div className="App">
-      <CounterWithTwoHooks />
+      <HookwithCallBack />
     </div>
   );
 }
