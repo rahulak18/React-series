@@ -1,10 +1,10 @@
 import './App.css';
-import HookCounter2 from './Use-Redux-Hook/HookCounter2';
+import CounterWithTwoHooks from './UseContext-with-UseReducer/CounterWithTwoHooks';
 
 function App() {
   return (
     <div className="App">
-      <HookCounter2 />
+      <CounterWithTwoHooks />
     </div>
   );
 }
