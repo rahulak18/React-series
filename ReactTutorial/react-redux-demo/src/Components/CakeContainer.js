@@ -12,13 +12,13 @@ const CakeContainer = (props) => {
     )
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, componentsOwnProps) => {
     return {
         numOfCakes: state.numOfCakes
     }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch, componentsOwnProps) => {
     return {
         buyCake: () => dispatch(buyCake())
     }
