@@ -11,8 +11,27 @@ const YoutubeForm = () => {
         },
         onSubmit: values => {
             console.log("values : ", values);
+        },
+        validate: values => {
+
+            let errors = {};
+
+            if (!values.name) {
+                errors.name = 'Required'
+            }
+
+            if (!values.email) {
+                errors.email = 'Required'
+            }
+
+            if (!values.channel) {
+                errors.channel = 'Required'
+            }
+            return errors;
         }
     });
+
+    console.log("Formiks errors : ", formik.errors); // using this errors in the jsx conditionally to display the error message
 
     return (
         <div>
