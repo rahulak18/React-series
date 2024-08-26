@@ -8,14 +8,15 @@ const YoutubeForm = () => {
             name: '', // key property name must be match with the name attribute value of the input fields
             email: '',
             channel: ''
+        },
+        onSubmit: values => {
+            console.log("values : ", values);
         }
     });
 
-    console.log("values : ", formik.values);
-
     return (
         <div>
-            <form>
+            <form onSubmit={formik.handleSubmit}>
                 <label htmlFor='name'>Name</label>
                 <input type='text' id='name' name='name' value={formik.values.name} onChange={formik.handleChange} />
 
@@ -25,7 +26,7 @@ const YoutubeForm = () => {
                 <label htmlFor='channel'>Channel</label>
                 <input type='text' id='channel' name='channel' onChange={formik.handleChange} value={formik.values.channel} />
 
-                <button>Submit</button>
+                <button type='submit'>Submit</button>
             </form>
         </div>
     )
