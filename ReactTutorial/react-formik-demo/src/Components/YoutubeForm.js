@@ -34,26 +34,23 @@ const YoutubeForm = () => {
                     type='text'
                     id='name'
                     name='name'
-                    value={formik.values.name}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur} />
+                    {...formik.getFieldProps('name')}
+                />
 
                 <label htmlFor='email'>E-mail</label>
                 <input
                     type='email'
                     id='email'
                     name='email'
-                    onChange={formik.handleChange}
-                    value={formik.values.email}
-                    onBlur={formik.handleBlur} />
+                    {...formik.getFieldProps('email')}
+                />
 
                 <label htmlFor='channel'>Channel</label>
                 <input type='text'
                     id='channel'
                     name='channel'
-                    onChange={formik.handleChange}
-                    value={formik.values.channel}
-                    onBlur={formik.handleBlur} />
+                    {...formik.getFieldProps('channel')}
+                />
 
                 <button type='submit'>Submit</button>
             </form>
