@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage, FieldArray } from 'formik';
+import { Formik, Form, Field, ErrorMessage, FieldArray, FastField } from 'formik';
 import * as Yup from 'yup';
 
 const YoutubeForm = () => {
@@ -74,9 +74,11 @@ const YoutubeForm = () => {
 
                 <div>
                     <label htmlFor='address'>Address</label>
-                    <Field name='channel'>
+                    <FastField name='channel'>
+                        {/* Use the form field whenever you dont want to re-render the form if any of the field changes, replace field by fastField component so that field will not rendered again unless until its value gets changed, if other value gets changes the fast field component will not get rendered again */}
                         {
                             (props) => {
+                                console.log("Form render")
                                 const { field, form, meta } = props;
                                 console.log(props);
                                 return (
@@ -87,7 +89,7 @@ const YoutubeForm = () => {
                                 )
                             }
                         }
-                    </Field>
+                    </FastField>
                 </div>
 
 
