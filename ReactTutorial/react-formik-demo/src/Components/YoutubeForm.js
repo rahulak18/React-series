@@ -13,7 +13,9 @@ const YoutubeForm = () => {
     const intialValues = {
         name: '', // key property name must be match with the name attribute value of the input fields
         email: '',
-        channel: ''
+        channel: '',
+        comments: '',
+        address: ''
     };
 
     const onSubmit = values => {
@@ -46,8 +48,38 @@ const YoutubeForm = () => {
                 <Field type='text'
                     id='channel'
                     name='channel'
+                    placeholder='Enter channel name'
                 />
                 <ErrorMessage name='channel' />
+
+                <label htmlFor='comments'>comments</label>
+                <Field type='text'
+                    id='comments'
+                    name='comments'
+                    as='textarea' // by default it will be input field
+                />
+                <ErrorMessage name='channel' />
+
+                <div>
+                    <label htmlFor='address'>Address</label>
+                    <Field name='channel'>
+                        {
+                            (props) => {
+                                const { field, form, meta } = props;
+                                console.log(props);
+                                return (
+                                    <div>
+                                        <input type='text' id='address' {...field} />
+                                        {meta.touched && meta.error ? <p>{meta.error}</p> : null}
+                                    </div>
+                                )
+
+
+
+                            }
+                        }
+                    </Field>
+                </div>
 
                 <button type='submit'>Submit</button>
             </Form>
