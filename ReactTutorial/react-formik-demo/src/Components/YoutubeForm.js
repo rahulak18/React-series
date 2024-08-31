@@ -50,7 +50,11 @@ const YoutubeForm = () => {
                     name='channel'
                     placeholder='Enter channel name'
                 />
-                <ErrorMessage name='channel' />
+                <ErrorMessage name='channel' component='div' />
+
+                {/* component = 'div' -> wraps the content inside the div tag */}
+                {/* component = {yourCustomComponentName} -> Adds/Replace your custom component in this place, use props.children in the custom component to get the error message */}
+                {/* Alternate way to customize the ErrorMessageComponent is to pass as children props */}
 
                 <label htmlFor='comments'>comments</label>
                 <Field type='text'
@@ -58,7 +62,9 @@ const YoutubeForm = () => {
                     name='comments'
                     as='textarea' // by default it will be input field
                 />
-                <ErrorMessage name='channel' />
+                <ErrorMessage name='channel' >
+                    {(errorMsg) => <div>{errorMsg}</div>}
+                </ErrorMessage>
 
                 <div>
                     <label htmlFor='address'>Address</label>
@@ -73,9 +79,6 @@ const YoutubeForm = () => {
                                         {meta.touched && meta.error ? <p>{meta.error}</p> : null}
                                     </div>
                                 )
-
-
-
                             }
                         }
                     </Field>
